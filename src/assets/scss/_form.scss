@@ -1,0 +1,62 @@
+.form-check-input[type="checkbox"] {
+    border-radius: 0;
+}
+.form-floating {
+    .form-control, .form-select{
+        padding-left: 1.5rem;
+        min-width: 200px;
+        border-color: #fff;
+        transition: $sec ease-in-out;
+    }
+    .form-select{
+        cursor: pointer;
+        border-width: 2px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    label{
+        height: auto;
+        left: 0.7rem; 
+        z-index: 2;
+    }
+    ::-webkit-scrollbar {
+        height: 7px;
+        width: 7px;
+        background-color: transparent;
+
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba($gray-800, 0.3);
+        border-radius: 5px;
+    }
+    :hover::-webkit-scrollbar-thumb {
+        background-color: rgba($gray-800, 0.5);
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+        background-color: #fff;
+    }    
+}
+.required{
+    &::before{
+        @include pseudoBlock;
+        content: '*';
+        color: red;    
+        top: 1rem;    
+        left: 0.75rem;
+        z-index: 2;        
+    }
+}
+.textarea{
+    &::after{
+        @include pseudoBlock;
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 1.75rem;
+        border-radius: $border-radius;
+        background-color: $white;
+        z-index: 1;
+    }
+}

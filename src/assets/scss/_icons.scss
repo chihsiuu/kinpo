@@ -1,0 +1,123 @@
+
+.nkg{
+    &__ic {
+        position: relative;
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        background-size: contain;
+        background-position: center;
+        transition: $sec ease-in-out;
+    }
+    &__ic--svg {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
+        transition: $sec ease-in-out;
+        flex-shrink: 0;
+    }
+}
+
+.mask {
+    background-image: url($icon-path+'ic-product-defualt-mask@2x.png');
+}
+.plug {
+    background-image: url($icon-path+'ic-product-defualt-plug@2x.png');
+}
+.print {
+    background-image: url($icon-path+'ic-product-defualt-print@2x.png');
+}
+.wifi {
+    background-image: url($icon-path+'ic-product-defualt-wifi@2x.png');
+}
+.chip {
+    background-image: url($icon-path+'ic-product-defualt-chip@2x.png');
+}
+.power {
+    background-image: url($icon-path+'ic-product-defualt-power@2x.png');
+}
+.tool {
+    background-image: url($icon-path+'ic-product-defualt-tool@2x.png');
+}
+.watch {
+    background-image: url($icon-path+'ic-product-defualt-watch@2x.png');
+}
+.ai {
+    background-image: url($icon-path+'ic-product-defualt-ai@2x.png');
+}
+.beauty {
+    background-image: url($icon-path+'ic-product-defualt-beauty@2x.png');
+}
+.print {
+    background-image: url($icon-path+'ic-product-defualt-3-d-print@2x.png');
+}
+.ig {
+    background-image: url($icon-path+'ic-defualt-ig@2x.png');
+}
+.fb {
+    background-image: url($icon-path+'ic-defualt-fb@2x.png');
+}
+.fb-share {
+    background-image: url($icon-path+'ic-share-fb@2x.png');
+}
+.linkin {
+    background-image: url($icon-path+'ic-share-linkin@2x.png');
+}
+.share {
+    background-image: url($icon-path+'ic-defualt-share@2x.png');
+}
+
+li:hover, li.active {
+    .mask {
+        background-image: url($icon-path+'ic-product-hover-mask@2x.png');
+    }
+    .plug {
+        background-image: url($icon-path+'ic-product-hover-plug@2x.png');
+    }
+    .print {
+        background-image: url($icon-path+'ic-product-hover-print@2x.png');
+    }
+    .wifi {
+        background-image: url($icon-path+'ic-product-hover-wifi@2x.png');
+    }
+    .chip {
+        background-image: url($icon-path+'ic-product-hover-chip@2x.png');
+    }
+    .power {
+        background-image: url($icon-path+'ic-product-hover-power@2x.png');
+    }
+    .tool {
+        background-image: url($icon-path+'ic-product-hover-tool@2x.png');
+    }
+    .watch {
+        background-image: url($icon-path+'ic-product-hover-watch@2x.png');
+    }
+    .ai {
+        background-image: url($icon-path+'ic-product-hover-ai@2x.png');
+    }
+    .beauty {
+        background-image: url($icon-path+'ic-product-hover-beauty@2x.png');
+    }
+    .print {
+        background-image: url($icon-path+'ic-product-hover-3-d-print@2x.png');
+    }
+    .ig {
+        background-image: url($icon-path+'ic-hover-ig@2x.png');
+    }
+    .fb, .fb-share {
+        background-image: url($icon-path+'ic-hover-fb@2x.png');
+    }
+    .linkin {
+        background-image: url($icon-path+'ic-hover-linkin@2x.png');
+    }
+    .share {
+        background-image: url($icon-path+'ic-hover-share@2x.png');
+    }
+}
+
+// 側邊主選單
+.show:not(.collapse) {
+    .icon-arrow-down {
+        transform: rotate(-180deg);
+    }
+}
